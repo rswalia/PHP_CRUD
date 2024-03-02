@@ -88,7 +88,7 @@
             <div class="form-heading">
                 <h2>Register</h2>
             </div>
-            <form name="form1" method="post" action="">
+            <form name="form1" method="post" action="" onsubmit="return validateForm()">
                 <div class="mb-3">
                     <!-- <label for="name" class="form-label">Full Name</label> -->
                     <input type="text" class="form-control" name="name" required placeholder="Full Name">
@@ -113,6 +113,30 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        function validateForm() {
+            var name = document.forms["form1"]["name"].value;
+            var email = document.forms["form1"]["email"].value;
+            var username = document.forms["form1"]["username"].value;
+            var password = document.forms["form1"]["password"].value;
+
+            // Validate email format
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Validate password strength (at least 5 letters and at least 1 uppercase)
+            var passwordRegex = /^(?=.*[a-zA-Z]{5,})(?=.*[A-Z]).*$/;
+            if (!passwordRegex.test(password)) {
+                alert("Password must contain at least 5 letters and at least 1 uppercase character.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 
 </html>
