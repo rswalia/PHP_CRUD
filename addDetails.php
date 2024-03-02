@@ -1,6 +1,6 @@
 <?php 
 
-$con=mysqli_connect("localhost","root","","crudphp");
+$con=mysqli_connect("localhost","root","","test2");
 // checking connection
 if(mysqli_connect_errno())
 	{

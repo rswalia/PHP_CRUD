@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","crudphp");
+$con=mysqli_connect("localhost","root","","test2");
 //checking the connection
 if(mysqli_connect_errno())
 {
@@ -12,7 +12,7 @@ while($row=mysqli_fetch_array($run))
 {
 $update_id=$row['id'];
 $firstName=$row['firstName'];
-$lastName=$row['LastName'];
+$lastName=$row['lastName'];
 $email=$row['email'];
 }
 
