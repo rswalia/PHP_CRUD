@@ -28,10 +28,13 @@
     </script>
 </head>
 <body>
+    
     <div class="container-fluid">
-        <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="dashboard.php"><img src="img/hero.png" alt="logo"></a>
+            
+            <!-- Responsive Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,13 +42,15 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="add.html">Add</a>
+                        <a class="nav-link btn btn-success text-white" href="add.html">Add</a>
                     </li>
                 </ul>
-                <a class="btn btn-info" href="index.html" onclick="logOut()">Log Out</a>
+                <a class="nav-link btn btn-info" href="index.html" onclick="logOut()">Log Out</a>
             </div>
         </nav>
     </div>
+
+
 
     <div class="container-fluid">
         <h1 class="dashboard-title">Developer Details</h1>
@@ -64,7 +69,7 @@
             </thead>
             <tbody>
                 <?php
-                // $con = mysqli_connect("localhost", "root", Object(SensitiveParameterValue), "test2");
+                // connection establish
                 $con = mysqli_connect("localhost", "root", "", "test2");
 
                 // Check the connection

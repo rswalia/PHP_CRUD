@@ -1,3 +1,5 @@
+<!-- Read -->
+
 <?php
 $con=mysqli_connect("localhost","root","","test2");
 //checking the connection
@@ -52,10 +54,10 @@ $email=$row['email'];
           </nav>
         </div>
         
-        <h1 class="dashboard-title">Dev Details</h1>
+        <h1 class="dashboard-title">Developer Details</h1>
         
         <div class="container_fluid">
-          <p class="data">Hi! <br>
+          <p class="data">Hi! Thank You<br>
             My name is <b><?php echo $firstName; echo' '; echo $lastName;?></b>. My employee id is <b><?php echo $update_id; ?></b>. You can contact me at
             <a href="mailto:"><b><?php echo $email; ?></b></a>.
           </p>

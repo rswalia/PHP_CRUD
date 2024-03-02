@@ -19,12 +19,10 @@ Key features offered by the Enhanced Online Product Management System:
 
 
 ## Instruction To Get Started
-- Clone the repository using command using ```$ git clone git@github.com:asangam/CrudPhp.git```
-- Go to your downloaded CrudPhp directory using commad ```$ cd CrudPhp``` from command line
 - Import the sql file from the folder to your database
 
 - Run your apache server and mysql
-- Run command ```$ php -S localhost:8081```
-- And now enter ```http://localhost:8081``` to web browser
+- Run command ```$ php -S localhost:8080```
+- And now enter ```http://localhost:8080``` to web browser
 - Enter 'admin' for both username and password
 - Have Fun

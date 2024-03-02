@@ -1,3 +1,4 @@
+<!-- Update -->
 
 <?php
 $con=mysqli_connect("localhost","root","","test2");
@@ -70,7 +71,6 @@ $email=$row['email'];
                       else
                       {
                         echo "";
-
                       }
 
                ?>"  
