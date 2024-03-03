@@ -1,21 +1,9 @@
-# CrudPhp [WIP]
+# PHP CRUD Application
 A simple web application to perform CRUD operation using PHP
 
 <!-- Project demo[Only html files] can be accessed at https://asangam.github.io/CrudPhp/ -->
 
 <img src="img/projectlogin.png" alt="">
-
-## Features
-
-Key features offered by the Enhanced Online Product Management System:
-
-- User registration and secure authentication
-- User-friendly login/logout functionality
-- Capability to add new products with comprehensive details such as name, quantity, and price
-- Displaying a list of products added by the logged-in user
-- Editing product details like name, quantity, and price
-- Effortless removal of unwanted products from the system
-- Responsive and intuitive user interface for an enhanced user experience
 
 
 ## Instruction To Get Started
