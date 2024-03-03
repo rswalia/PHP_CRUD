@@ -1,3 +1,5 @@
+<!-- HOME PAGE -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +9,6 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        function logOut() {
-            alert("You have been logged out");
-        }
-
-        $(document).ready(function () {
-            $('a[data-confirm]').on("click", function (e) {
-                e.preventDefault();
-
-                var choice = confirm($(this).attr('data-confirm'));
-
-                if (choice) {
-                    window.location.href = $(this).attr('href');
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     
@@ -113,5 +96,24 @@
             </tbody>
         </table>
     </div>
+    <script>
+        function logOut() {
+            alert("You have been logged out");
+        }
+
+        $(document).ready(function () {
+            $('a[data-confirm]').on("click", function (e) {
+                e.preventDefault();
+
+                var choice = confirm($(this).attr('data-confirm'));
+
+                if (choice) {
+                    window.location.href = $(this).attr('href');
+                }
+            });
+        });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
