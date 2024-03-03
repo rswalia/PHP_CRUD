@@ -21,7 +21,7 @@
         }
 
         .container {
-            max-width: 400px;
+            max-width: 500px;
             background-color: rgba(52, 73, 94, 0.7);
 	        opacity: 0.7;
             padding: 30px;
@@ -124,13 +124,6 @@
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 alert("Please enter a valid email address.");
-                return false;
-            }
-
-            // Validate password strength (at least 5 letters and at least 1 uppercase)
-            var passwordRegex = /^(?=.*[a-zA-Z]{5,})(?=.*[A-Z]).*$/;
-            if (!passwordRegex.test(password)) {
-                alert("Password must contain at least 5 letters and at least 1 uppercase character.");
                 return false;
             }
 
